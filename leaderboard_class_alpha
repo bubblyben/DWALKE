@@ -1,0 +1,75 @@
+#Hi Griff
+#Version 0.0.1
+
+class n_and_s(object):
+    def __init__(self, name, score):
+        self.name = name
+        self.score = score
+
+    def return_name(self):
+        return self.name
+
+    def return_score(self):
+        return self.score
+
+class leaderboard(object):
+    def __init__(self):
+        pass
+
+
+name_list = ["ben", "Viggo Mortensen", "Fore, Four, For U", "bookshelf"]
+score_list = [1, 12, 10, 0]
+
+new_name_list = []
+
+num = len(name_list)
+
+
+
+def organize_scores(list1):
+    for i in list1:
+        if i = max(list1)
+
+
+"""
+
+n = 0
+q = 'z'
+while n < num:
+    for i in range(len(name_list)):
+        if name_list[i] < q:
+            q = name_list[i]
+        elif name_list[i] == q:
+            new_name_list.append(i)
+            if i == 0:
+                name_list[i] = 'za'
+            else:
+                name_list[i] = 'zb'
+            n += 1
+            q = 'zzzzzzzzzzzz'
+            break
+"""
+new_list = []
+
+for name in name_list:
+    new_list.append(str(name) + ":")
+
+print "Leaders: ", name_list
+
+a = open("leadars.txt", "w")
+for i in new_list:
+    a.write(str(i) + "\n")
+a.close()
+
+print " "
+
+b = open("scores.txt", "w")
+for i in score_list:
+    b.write(str(i) + "\n")
+b.close()
+
+c, d = open("leadars.txt", "r"), open("scores.txt", "r")
+for i in range(len(new_list)):
+    print c.readline() + d.readline()
+c.close()
+d.close()
